@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="MAIN.CSS">
+    <!-- <link rel="stylesheet" href="new.css"> -->
+</head>
+<body>
+    <div class="container">
+
+        <div class="content">
+
+            <h2 id="main_heading">Password Generator</h2>
+ 
+
+            <div class="output_container">
+                <input readonly output placeholder="Password">
+                <div class="btn">
+                    <span class="copied_text"></span>
+                    <!-- <i class="fa-solid fa-phone" id="copy"></i> -->
+                    <img src="./copy.svg" alt="" height="23px" width="23px" id="copy">
+                </div>
+            </div>
+            
+            <div class="condition_container">
+    
+                <div class="Password_length">
+                    <h3 class="pass_head">Password Length</h3>
+                    <p readonly class="length"></p>
+                </div>
+    
+                <input type="range" min="1"  max="20" class="slider">
+    
+                <div class=" condition">
+                    <input type="checkbox" class="checkbox" id="uppercase">
+                    <label for="">Include Uppercase Letter</label>
+                </div>
+    
+                <div class=" condition">
+                    <input type="checkbox" class="checkbox" id="lowercase">
+                    <label for="">Include Lowercase Letter</label>
+                </div>
+    
+                <div class=" condition">
+                    <input type="checkbox" class="checkbox" id="symbols">
+                    <label for="">Include Symbols</label>
+                </div>
+    
+                <div class=" condition">
+                    <input type="checkbox" class="checkbox" id="numbers">
+                    <label for="">Include Numbers</label>
+                </div>
+    
+                <div class="strength">
+    
+                    <h3>Strength</h3>
+                    <div class="strength_color"></div>
+                    <span id="pop_up">Please select checkbox</span>
+                </div>
+    
+                <button class="generatebutton" >Generate Password</button>
+
+
+                <!-- additional code done  -->
+                <!-- <span id="pop_up"></span> -->
+
+                <button class="reset" >Reset</button>
+    
+    
+            </div>
+        </div>  
+
+    </div>
+    <script src="script.JS"></script>
+</body>
+</html>
