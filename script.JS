@@ -193,4 +193,9 @@ const reset=document.querySelector('.reset');
 
 reset.addEventListener('click',()=>{
     generated_password.value="";
+    password_length=10;
+    handleslider();
+    allCheckboxes.forEach((box)=>{
+        box.checked=false;
+    })
 })
